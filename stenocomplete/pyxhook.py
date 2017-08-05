@@ -34,19 +34,14 @@
 #    So if there are any bugs, they are probably my fault. :)
 
 import sys
-import os
 import re
 import time
 import threading
-import Image
 
-from Xlib import X, XK, display, error
+from Xlib import X, XK, display
 from Xlib.ext import record
 from Xlib.protocol import rq
 
-#######################################################################
-########################START CLASS DEF################################
-#######################################################################
 
 class HookManager(threading.Thread):
     """This is the main class. Instantiate it, and you can hand it KeyDown and KeyUp (functions in your own code) which execute to parse the pyxhookkeyevent class that is returned.
@@ -342,9 +337,6 @@ class pyxhookmouseevent:
     def __str__(self):
         return "Window Handle: " + str(self.Window) + "\nWindow Name: " + str(self.WindowName) + "\nWindow's Process Name: " + str(self.WindowProcName) + "\nPosition: " + str(self.Position) + "\nMessageName: " + str(self.MessageName) + "\n"
 
-#######################################################################
-#########################END CLASS DEF#################################
-#######################################################################
 
 if __name__ == '__main__':
     hm = HookManager()
