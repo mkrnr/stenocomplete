@@ -1,5 +1,8 @@
 # stenocomplete
 
+![Stenocomplete interface](https://media.stenoblog.com/posts/2017-08-06-stenocomplete.png)
+
+
 Inspired by [StenoTray](https://github.com/brentn/StenoTray), stenocomplete provides stroke suggestions based on the currently typed letters.
 
 Some feature are:
