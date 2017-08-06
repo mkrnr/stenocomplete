@@ -82,4 +82,15 @@ If you want to prioritize a dictionary, put it at the end of the list.
 
 ## Known Issues
 
-Please let me know if you have any issues!
+Please let me know if you have any issues that are not listed here!
+
+### The word list flickers when it gets refreshed
+
+Some terminals seem to be better at handling the refresh than others.
+Examples of terminals that refresh smoothly are:
+
+* gnome-terminal
+* termite
+* sakura
+
+
