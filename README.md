@@ -27,12 +27,12 @@ Stenocomplete uses the Python library [marisa-trie](http://marisa-trie.readthedo
 
 A popular program for installing python libraries is `pip`.
 The following command is used to install pip for Python 3 on Ubuntu:
-```bash
+```
 sudo apt-get install python3-pip
 ```
 
 To install `marisa-trie`, use:
-```bash
+```
 pip3 install --user marisa_trie
 ```
 
@@ -44,12 +44,20 @@ echo "import Xlib" | python3
 ```
 
 If you don't have `python-xlib` installed, you can use pip:
-```bash
+```
 pip3 install --user python-xlib
 ```
 
 
-Finally, download and unzip the content of this repository: <https://github.com/mkrnr/stenocomplete/archive/master.zip>
+Finally, download the content of this repository:
+
+Either, you download it as a zip file and unzip it:
+<https://github.com/mkrnr/stenocomplete/archive/master.zip>
+
+Or you can use `git` if you want to have a way of updating the code:
+```
+git clone https://github.com/mkrnr/stenocomplete.git
+```
 
 ### Windows
 
@@ -66,7 +74,7 @@ Currently, the only information that is provided to the [`main.py`](stenocomplet
 Additional options such as the simplification of strokes are planned.
 
 To run stenocomplete, open a terminal and execute [`stenocomplete/main.py`](stenocomplete/main.py) with the dictionaries that should be loaded. For example:
-```bash
+```
 python3 path/to/stenocomplete/main.py ~/.local/share/plover/*.json
 ```
 
